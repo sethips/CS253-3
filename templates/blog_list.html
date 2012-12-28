@@ -1,0 +1,10 @@
+
+<form>
+	<a href="/blog">Blog Home</a>	
+	<a href="/blog/newpost">Post new entry</a>
+	<hr>
+	{% for blog in blogs %}
+		<div>{{blog.subject}}</div>
+		<pre>{{blog.content}}</pre>
+	{% endfor %}
+</form>
